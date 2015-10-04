@@ -17,6 +17,7 @@
 		A101EDEC1BC03608001FC04C /* AddABookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101EDEB1BC03608001FC04C /* AddABookViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A101EDEE1BC03815001FC04C /* ViewBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101EDED1BC03815001FC04C /* ViewBooksViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A1268AB61BC0F11A007D6456 /* IndvBookClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1268AB51BC0F11A007D6456 /* IndvBookClass.swift */; settings = {ASSET_TAGS = (); }; };
+		A1268AB81BC0F27B007D6456 /* LibraryClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1268AB71BC0F27B007D6456 /* LibraryClass.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A101EDEB1BC03608001FC04C /* AddABookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddABookViewController.swift; sourceTree = "<group>"; };
 		A101EDED1BC03815001FC04C /* ViewBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBooksViewController.swift; sourceTree = "<group>"; };
 		A1268AB51BC0F11A007D6456 /* IndvBookClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndvBookClass.swift; sourceTree = "<group>"; };
+		A1268AB71BC0F27B007D6456 /* LibraryClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				A101EDEB1BC03608001FC04C /* AddABookViewController.swift */,
 				A101EDED1BC03815001FC04C /* ViewBooksViewController.swift */,
 				A101EDC11BC0327B001FC04C /* Main.storyboard */,
+				A1268AB71BC0F27B007D6456 /* LibraryClass.swift */,
 				A1268AB51BC0F11A007D6456 /* IndvBookClass.swift */,
 				A101EDC41BC0327B001FC04C /* Assets.xcassets */,
 				A101EDC61BC0327B001FC04C /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1268AB81BC0F27B007D6456 /* LibraryClass.swift in Sources */,
 				A101EDEE1BC03815001FC04C /* ViewBooksViewController.swift in Sources */,
 				A101EDC01BC0327B001FC04C /* ViewController.swift in Sources */,
 				A1268AB61BC0F11A007D6456 /* IndvBookClass.swift in Sources */,
