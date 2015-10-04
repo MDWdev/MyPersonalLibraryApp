@@ -16,6 +16,7 @@
 		A101EDDE1BC0327B001FC04C /* MyPersonalLibraryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101EDDD1BC0327B001FC04C /* MyPersonalLibraryUITests.swift */; };
 		A101EDEC1BC03608001FC04C /* AddABookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101EDEB1BC03608001FC04C /* AddABookViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A101EDEE1BC03815001FC04C /* ViewBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101EDED1BC03815001FC04C /* ViewBooksViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A1268AB61BC0F11A007D6456 /* IndvBookClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1268AB51BC0F11A007D6456 /* IndvBookClass.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A101EDDF1BC0327B001FC04C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A101EDEB1BC03608001FC04C /* AddABookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddABookViewController.swift; sourceTree = "<group>"; };
 		A101EDED1BC03815001FC04C /* ViewBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBooksViewController.swift; sourceTree = "<group>"; };
+		A1268AB51BC0F11A007D6456 /* IndvBookClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndvBookClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				A101EDEB1BC03608001FC04C /* AddABookViewController.swift */,
 				A101EDED1BC03815001FC04C /* ViewBooksViewController.swift */,
 				A101EDC11BC0327B001FC04C /* Main.storyboard */,
+				A1268AB51BC0F11A007D6456 /* IndvBookClass.swift */,
 				A101EDC41BC0327B001FC04C /* Assets.xcassets */,
 				A101EDC61BC0327B001FC04C /* LaunchScreen.storyboard */,
 				A101EDC91BC0327B001FC04C /* Info.plist */,
@@ -263,6 +266,7 @@
 			files = (
 				A101EDEE1BC03815001FC04C /* ViewBooksViewController.swift in Sources */,
 				A101EDC01BC0327B001FC04C /* ViewController.swift in Sources */,
+				A1268AB61BC0F11A007D6456 /* IndvBookClass.swift in Sources */,
 				A101EDEC1BC03608001FC04C /* AddABookViewController.swift in Sources */,
 				A101EDBE1BC0327B001FC04C /* AppDelegate.swift in Sources */,
 			);
