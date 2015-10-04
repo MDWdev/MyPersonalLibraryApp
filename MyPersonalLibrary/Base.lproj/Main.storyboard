@@ -106,11 +106,20 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ng7-AN-oTQ">
                                 <rect key="frame" x="110" y="409" width="100" height="30"/>
                                 <state key="normal" title="Add This Book"/>
+                                <connections>
+                                    <action selector="addBookToLibrary:" destination="lmA-hb-eqb" eventType="touchUpInside" id="WyG-SK-ahV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="BTu-Nw-kZW"/>
+                    <connections>
+                        <outlet property="authorTextField" destination="gpx-Ub-Gdb" id="xlr-bU-RYc"/>
+                        <outlet property="genreTextField" destination="Sbq-Oi-fDc" id="Hll-So-nxR"/>
+                        <outlet property="lengthTextField" destination="bC2-Ve-aN0" id="AJk-fY-2kE"/>
+                        <outlet property="titleTextField" destination="mmx-hl-wWV" id="bwg-Hx-Fzb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMc-jT-cgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

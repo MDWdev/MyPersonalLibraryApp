@@ -10,4 +10,16 @@ import UIKit
 
 class AddABookViewController: UIViewController {
     
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var authorTextField: UITextField!
+    @IBOutlet weak var genreTextField: UITextField!
+    @IBOutlet weak var lengthTextField: UITextField!
+    
+    
+    
+    
+    
+    @IBAction func addBookToLibrary(sender: AnyObject) {
+    }
+    
 }
