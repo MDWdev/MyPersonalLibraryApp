@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyPersonalLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy0-cC-I8h">
+                                <rect key="frame" x="120" y="147" width="81" height="30"/>
+                                <state key="normal" title="Add A Book"/>
+                                <connections>
+                                    <segue destination="lmA-hb-eqb" kind="push" identifier="addABookViewController" id="cVa-sX-Qnl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjH-T7-Exf">
+                                <rect key="frame" x="108" y="269" width="104" height="30"/>
+                                <state key="normal" title="View My Books"/>
+                                <connections>
+                                    <segue destination="WeM-Zs-gom" kind="push" identifier="viewBooksViewController" id="cd7-Ot-0Bn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202.66666666666666" y="289.20666666666665"/>
+        </scene>
+        <!--View Books View Controller-->
+        <scene sceneID="99c-EV-97j">
+            <objects>
+                <viewController id="WeM-Zs-gom" customClass="ViewBooksViewController" customModule="MyPersonalLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="deR-3u-uDP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uvu-OE-tsF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Oa-X2-maa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="skp-OJ-L9d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSd-yK-buQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="685"/>
+        </scene>
+        <!--AddA Book View Controller-->
+        <scene sceneID="7Wv-uk-KL3">
+            <objects>
+                <viewController id="lmA-hb-eqb" customClass="AddABookViewController" customModule="MyPersonalLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KVj-Ay-Khi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ijm-Lb-nMx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PCe-v6-kX2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BTu-Nw-kZW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMc-jT-cgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="725" y="28"/>
+        </scene>
+    </scenes>
+</document>
