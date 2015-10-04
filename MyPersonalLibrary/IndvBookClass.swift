@@ -14,8 +14,8 @@ class Book {
     var lengthInPages: Int?
     var genre: String?
     
-    func newBook() {
-        
+    func newBook(title: String, author: String, genre: String, length: Int) {
+        //add book to library here?
         
     }
     

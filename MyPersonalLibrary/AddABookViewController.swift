@@ -20,6 +20,14 @@ class AddABookViewController: UIViewController {
     
     
     @IBAction func addBookToLibrary(sender: AnyObject) {
+        var titleText = titleTextField.text
+        var authorText = authorTextField.text
+        var genreText = genreTextField.text
+        var lengthInt = Int(lengthTextField.text!)
+        
+        
+        //Why you no just work?!?
+        let thisBook = Book.newBook(titleText, authorText, genreText, lengthInt)
     }
     
 }
