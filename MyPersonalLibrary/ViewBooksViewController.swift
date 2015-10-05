@@ -10,6 +10,8 @@ import UIKit
 
 class ViewBooksViewController: UIViewController {
     
+    var workingLibrary = Library()
+    
     @IBOutlet weak var infoArea: UITextView!
     
     override func viewDidLoad() {
@@ -24,10 +26,10 @@ class ViewBooksViewController: UIViewController {
     }
     
     func ViewAllBooks() { //need to grab myLibrary from segue
-        for book in MyLibrary.books {
-            print(MyLibrary.book.title)
+        for (_, book) in workingLibrary.books {
+            print(book.title)
             //print(books.count)
-            infoArea.text = "\(infoArea.text!) :\(book.title)--\(book.author)\n(book.genre)--\(book.length)"
+            infoArea.text = "\(infoArea.text!) :\(book.title)--\(book.author)\n(book.genre)--\(book.lengthInPages)"
         }
     }
     

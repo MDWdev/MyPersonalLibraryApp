@@ -9,6 +9,8 @@
 import UIKit
 
 class AddABookViewController: UIViewController {
+    
+    var workingLibrary = Library()
 
     @IBOutlet weak var enterTitleField: UITextField!
     @IBOutlet weak var enterAuthorField: UITextField!
@@ -33,13 +35,23 @@ class AddABookViewController: UIViewController {
     }
     
     func addNewBook(){
-        let thisBook = Book(title: enterTitleField.text!, author: enterAuthorField.text!, genre: enterGenreField.text!, length: Int(enterLengthField.text!)!)
+        var thisBook = Book(title: enterTitleField.text!, author: enterAuthorField.text!, genre: enterGenreField.text!, length: Int(enterLengthField.text!)!)
         
         // need to grab myLibrary from segue
         //myLibrary.books.append(thisBook)
-        myLibrary.addBook = thisBook
+        workingLibrary.addBook(thisBook)
+        print("\(thisBook.title!) was created")
+        clearFields()
         
     
+    }
+    
+    func clearFields() {
+        enterTitleField.text = ""
+        enterAuthorField.text = ""
+        enterGenreField.text = ""
+        enterLengthField.text = ""
+        
     }
 
 

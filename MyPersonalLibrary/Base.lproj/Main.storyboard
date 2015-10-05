@@ -27,7 +27,7 @@
                                 <rect key="frame" x="108" y="269" width="104" height="30"/>
                                 <state key="normal" title="View My Books"/>
                                 <connections>
-                                    <segue destination="WeM-Zs-gom" kind="modal" identifier="viewBooksSeque" id="cd7-Ot-0Bn"/>
+                                    <segue destination="WeM-Zs-gom" kind="modal" identifier="viewBooksSegue" id="cd7-Ot-0Bn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -79,22 +79,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the title of your book" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmx-hl-wWV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the title of your book" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmx-hl-wWV">
                                 <rect key="frame" x="20" y="99" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the author of your book" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpx-Ub-Gdb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the author of your book" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpx-Ub-Gdb">
                                 <rect key="frame" x="20" y="162" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the genre of your book" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sbq-Oi-fDc">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the genre of your book" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sbq-Oi-fDc">
                                 <rect key="frame" x="20" y="228" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the length, in pages" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bC2-Ve-aN0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the length, in pages" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bC2-Ve-aN0">
                                 <rect key="frame" x="20" y="297" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -103,7 +103,6 @@
                                 <rect key="frame" x="110" y="409" width="100" height="30"/>
                                 <state key="normal" title="Add This Book"/>
                                 <connections>
-                                    <action selector="addBookToLibrary:" destination="lmA-hb-eqb" eventType="touchUpInside" id="WyG-SK-ahV"/>
                                     <action selector="addNewBook:" destination="lmA-hb-eqb" eventType="touchUpInside" id="5Mz-0T-ADR"/>
                                 </connections>
                             </button>
@@ -112,14 +111,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="BTu-Nw-kZW"/>
                     <connections>
-                        <outlet property="authorTextField" destination="gpx-Ub-Gdb" id="xlr-bU-RYc"/>
                         <outlet property="enterAuthorField" destination="gpx-Ub-Gdb" id="XWN-50-lzh"/>
                         <outlet property="enterGenreField" destination="Sbq-Oi-fDc" id="u8q-kw-IAl"/>
                         <outlet property="enterLengthField" destination="bC2-Ve-aN0" id="6i3-rG-38F"/>
                         <outlet property="enterTitleField" destination="mmx-hl-wWV" id="qCd-Yw-h52"/>
-                        <outlet property="genreTextField" destination="Sbq-Oi-fDc" id="Hll-So-nxR"/>
-                        <outlet property="lengthTextField" destination="bC2-Ve-aN0" id="AJk-fY-2kE"/>
-                        <outlet property="titleTextField" destination="mmx-hl-wWV" id="bwg-Hx-Fzb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMc-jT-cgn" userLabel="First Responder" sceneMemberID="firstResponder"/>

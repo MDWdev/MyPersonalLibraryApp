@@ -23,8 +23,17 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //pass myLibrary to Add Books controller here so that the new book can be added to the Library
-        //or pass myLibrary to View Books controller
+        if (segue.identifier == "addABookSegue")
+        {
+            let VC = segue.destinationViewController as? AddABookViewController
+            VC!.workingLibrary = myLibrary
+            
+        }
+        else if (segue.identifier == "viewBooksSegue")
+        {
+            let VC = segue.destinationViewController as? ViewBooksViewController
+            VC!.workingLibrary = myLibrary
+        }
     }
 
 
