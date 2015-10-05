@@ -14,7 +14,12 @@ class Book {
     var lengthInPages: Int?
     var genre: String?
     
-    func newBook(title: String, author: String, genre: String, length: Int) {
+    init(title: String, author: String, genre: String, length: Int) {
+        self.title = title
+        self.author = author
+        self.genre = genre
+
+        
         //add book to library here?
         
     }

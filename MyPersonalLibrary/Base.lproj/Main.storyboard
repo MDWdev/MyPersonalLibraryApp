@@ -20,14 +20,14 @@
                                 <rect key="frame" x="120" y="147" width="81" height="30"/>
                                 <state key="normal" title="Add A Book"/>
                                 <connections>
-                                    <segue destination="lmA-hb-eqb" kind="push" identifier="addABookSegue" id="cVa-sX-Qnl"/>
+                                    <segue destination="lmA-hb-eqb" kind="modal" identifier="addABookSegue" id="cVa-sX-Qnl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjH-T7-Exf">
                                 <rect key="frame" x="108" y="269" width="104" height="30"/>
                                 <state key="normal" title="View My Books"/>
                                 <connections>
-                                    <segue destination="WeM-Zs-gom" kind="push" identifier="viewBooksSeque" id="cd7-Ot-0Bn"/>
+                                    <segue destination="WeM-Zs-gom" kind="modal" identifier="viewBooksSeque" id="cd7-Ot-0Bn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,22 +50,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book Title, Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaW-gN-9be">
-                                <rect key="frame" x="20" y="56" width="280" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre, Page Length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4K-10-C7Q">
-                                <rect key="frame" x="20" y="85" width="280" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="book list will show here" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="2Qd-8M-or2">
+                                <rect key="frame" x="26" y="38" width="274" height="447"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="skp-OJ-L9d"/>
+                    <connections>
+                        <outlet property="infoArea" destination="2Qd-8M-or2" id="pWh-RN-8X8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uSd-yK-buQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -108,6 +104,7 @@
                                 <state key="normal" title="Add This Book"/>
                                 <connections>
                                     <action selector="addBookToLibrary:" destination="lmA-hb-eqb" eventType="touchUpInside" id="WyG-SK-ahV"/>
+                                    <action selector="addNewBook:" destination="lmA-hb-eqb" eventType="touchUpInside" id="5Mz-0T-ADR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -116,6 +113,10 @@
                     <navigationItem key="navigationItem" id="BTu-Nw-kZW"/>
                     <connections>
                         <outlet property="authorTextField" destination="gpx-Ub-Gdb" id="xlr-bU-RYc"/>
+                        <outlet property="enterAuthorField" destination="gpx-Ub-Gdb" id="XWN-50-lzh"/>
+                        <outlet property="enterGenreField" destination="Sbq-Oi-fDc" id="u8q-kw-IAl"/>
+                        <outlet property="enterLengthField" destination="bC2-Ve-aN0" id="6i3-rG-38F"/>
+                        <outlet property="enterTitleField" destination="mmx-hl-wWV" id="qCd-Yw-h52"/>
                         <outlet property="genreTextField" destination="Sbq-Oi-fDc" id="Hll-So-nxR"/>
                         <outlet property="lengthTextField" destination="bC2-Ve-aN0" id="AJk-fY-2kE"/>
                         <outlet property="titleTextField" destination="mmx-hl-wWV" id="bwg-Hx-Fzb"/>

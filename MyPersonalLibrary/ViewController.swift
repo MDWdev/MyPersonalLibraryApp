@@ -9,15 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var myLibrary = Library()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //pass myLibrary to Add Books controller here so that the new book can be added to the Library
+        //or pass myLibrary to View Books controller
     }
 
 

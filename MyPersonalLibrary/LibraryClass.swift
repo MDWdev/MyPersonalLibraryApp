@@ -9,12 +9,22 @@
 import Foundation
 
 class Library {
-    var books = [Book]()
+    var books = [String:Book]()
     
-    func showLibrary() {
-        for book in books {
-            print(book.title)
-            print(books.count)
-        }
+    init(){
+        
+    }
+    
+    func addBook(newBook: Book) {
+        //this func should take a book object and add to library
+        self.books[newBook.title!] = newBook
+    }
+    
+    func editBook() {
+        self.books.updateValue(<#T##value: Value##Value#>, forKey: <#T##Key#>)
+    }
+    
+    func deleteBook() {
+        
     }
 }

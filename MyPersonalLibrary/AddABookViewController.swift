@@ -2,32 +2,45 @@
 //  AddABookViewController.swift
 //  MyPersonalLibrary
 //
-//  Created by Melissa on 10/3/15.
+//  Created by Melissa on 10/4/15.
 //  Copyright © 2015 Melissa Webster. All rights reserved.
 //
 
 import UIKit
 
 class AddABookViewController: UIViewController {
-    
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var authorTextField: UITextField!
-    @IBOutlet weak var genreTextField: UITextField!
-    @IBOutlet weak var lengthTextField: UITextField!
-    
-    
+
+    @IBOutlet weak var enterTitleField: UITextField!
+    @IBOutlet weak var enterAuthorField: UITextField!
+    @IBOutlet weak var enterGenreField: UITextField!
+    @IBOutlet weak var enterLengthField: UITextField!
     
     
     
-    @IBAction func addBookToLibrary(sender: AnyObject) {
-        var titleText = titleTextField.text
-        var authorText = authorTextField.text
-        var genreText = genreTextField.text
-        var lengthInt = Int(lengthTextField.text!)
-        
-        
-        //Why you no just work?!?
-        let thisBook = Book.newBook(titleText, authorText, genreText, lengthInt)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func addNewBook(sender: AnyObject) {
+        addNewBook()
+    }
+    
+    func addNewBook(){
+        let thisBook = Book(title: enterTitleField.text!, author: enterAuthorField.text!, genre: enterGenreField.text!, length: Int(enterLengthField.text!)!)
+        
+        // need to grab myLibrary from segue
+        //myLibrary.books.append(thisBook)
+        myLibrary.addBook = thisBook
+        
+    
+    }
+
+
 }
